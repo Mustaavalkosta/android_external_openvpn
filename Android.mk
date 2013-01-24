@@ -113,7 +113,7 @@ endif
 
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES:= $(common_SRC_FILES)
-LOCAL_CFLAGS:= $(common_CFLAGS)
+LOCAL_CFLAGS:= $(common_CFLAGS) -fno-strict-aliasing
 LOCAL_C_INCLUDES:= $(common_C_INCLUDES)
 
 LOCAL_SHARED_LIBRARIES:= $(common_SHARED_LIBRARIES) libssl libcrypto liblzo
